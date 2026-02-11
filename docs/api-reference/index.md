@@ -9,7 +9,7 @@ This section documents the available **OSCU API functions**, their request/respo
 
 ---
 
-## 3.2.1 List of OSCU Functions
+## List of OSCU Functions
 
 | Section | Class / Module | Method | Description | Precondition | Request Object | Response Object |
 |--------|----------------|--------|------------|-------------|----------------|----------------|

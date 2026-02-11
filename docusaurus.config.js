@@ -97,9 +97,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Paybill Solutions, Inc. All rights reserved.
-      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','G-JDY5V55YQC');</script>
-      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=G-JDY5V55YQC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      copyright: `Copyright © ${new Date().getFullYear()} Paybill Kenya Limited. All rights reserved.
       <script>
       (function () {
           const hubspotKeys = ['__hstc', '__hssc', '__hsfp'];
@@ -204,7 +202,16 @@ module.exports = {
           window.getStoredUTMParams = getStoredParams; // NEW: Access stored params
           window.buildUrlWithStoredParams = buildUrlWithStoredParams; // NEW: Build URLs with UTM params
       })();
-      </script>
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      (function(){
+        var s1=document.createElement("script");
+        s1.async=true;
+        s1.src='https://embed.tawk.to/6917e66e5781c019591e4f6e/1ja2lo89t';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        document.body.appendChild(s1);
+      })();
+      </script>      
       `,
     },    
     algolia: {

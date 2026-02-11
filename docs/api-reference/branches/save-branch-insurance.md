@@ -87,9 +87,6 @@ POST /saveBhfInsurance
 
 ```python
 insurance_data = {
-    'tin': config['oscu']['tin'],
-    'bhfId': config['oscu']['bhf_id'],
-    'cmcKey': config['oscu']['cmc_key'],
     'isrccCd': 'ISRCC01',
     'isrccNm': 'ISRCC NAME',
     'isrcRt': 20,
@@ -110,10 +107,10 @@ else:
 
   </TabItem>
 
-  <TabItem value="js" label="JavaScript / Node.js">
+  <TabItem value="js" label="JavaScript / TypeScript">
 
 ```ts
-const response = await etimsClient.saveBranchInsurance({
+const response = await etimsVClient.saveBranchInsurance({
   isrccCd: `INS12345`,
   isrccNm: `Test Insurance ${Date.now()}`,
   isrcRt: 20,
@@ -133,9 +130,6 @@ console.log(`✅ Branch insurance saved: ${response.resultMsg}`);
 
 ```php
 $requestData = [
-    'tin'       => $config['oscu']['tin'],
-    'bhfId'     => $config['oscu']['bhf_id'],
-    'cmcKey'    => $config['oscu']['cmc_key'] ?? '',
     'isrccCd'   => 'ISRCC01',
     'isrccNm'   => 'ISRCC NAME',
     'isrcRt'    => 20,

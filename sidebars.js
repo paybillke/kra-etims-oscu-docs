@@ -48,8 +48,7 @@ const sidebars = {
           items: [
             'api-reference/items/select-item-classes',
             'api-reference/items/select-items',
-            'api-reference/items/save-item',
-            'api-reference/items/save-item-composition',
+            'api-reference/items/save-item'
           ],
         },
 
@@ -87,25 +86,30 @@ const sidebars = {
 
     {
       type: 'category',
-      label: 'Error Handling',
-      className: 'category-as-header error-handling-header',
+      label: 'Code Definition',
+      className: 'category-as-header code-definition-header',
       collapsed: true,
       items: [
-        'error-handling/index',
-        'error-handling/exceptions',
-        'error-handling/common-error-codes',
+        'code-definition/tax-type',
+        'code-definition/taxpayer-status',
+        'code-definition/product-type',
+        'code-definition/countries',
+        'code-definition/packaging-unit',
+        'code-definition/unit-of-quantity',
+        'code-definition/currency',
+        'code-definition/transaction-type',
+        'code-definition/sales-receipt-type',
+        'code-definition/payment-method',
+        'code-definition/transaction-progress',
+        'code-definition/registration-type',
+        'code-definition/purchase-receipt-type',
+        'code-definition/stock-in-out',
+        'code-definition/import-item-status',
+        'code-definition/credit-note-reason',
+        'code-definition/api-response-code',
+        'code-definition/item-code',
       ],
-    },
-
-    {
-      type: 'category',
-      label: 'Troubleshooting',
-      className: 'category-as-header troubleshooting-header',
-      collapsed: true,
-      items: [
-        'troubleshooting/index',
-      ],
-    },
+    }
   ],
 };
 

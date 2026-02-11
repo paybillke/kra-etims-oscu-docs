@@ -111,7 +111,7 @@ pip --version
 
 ---
 
-## 4. System & Network Requirements
+## System & Network Requirements
 
 * Outbound HTTPS access to:
 

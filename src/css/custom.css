@@ -916,12 +916,8 @@ button[title="Switch between dark and light mode (currently light mode)"] svg,
   background-image: url('../../static/img/sidebar-icons/api-reference.svg');
 }
 
-.error-handling-header .menu__list-item-collapsible:first-child a:first-of-type::before {
-  background-image: url('../../static/img/sidebar-icons/error-handling.svg');
-}
-
-.troubleshooting-header .menu__list-item-collapsible:first-child a:first-of-type::before {
-  background-image: url('../../static/img/sidebar-icons/troubleshooting.svg');
+.code-definition-header .menu__list-item-collapsible:first-child a:first-of-type::before {
+  background-image: url('../../static/img/sidebar-icons/code-definition.svg');
 }
 
 .getting-started-header .menu__list-item-collapsible:first-child a:first-of-type::before {

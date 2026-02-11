@@ -155,10 +155,10 @@ for branch in bhf_list:
 
   </TabItem>
 
-  <TabItem value="js" label="JavaScript / Node.js">
+  <TabItem value="js" label="JavaScript / TypeScript">
 
 ```ts
-const response = await etimsClient.selectBranches({
+const response = await etimsVClient.selectBranches({
   lastReqDt: formatDateForEtims(-30)
 });
 

@@ -4,8 +4,10 @@ import FooterLinks from '@theme/Footer/Links';
 import FooterCopyright from '@theme/Footer/Copyright';
 import Link from '@docusaurus/Link';
 import ThemedImage from '@theme/ThemedImage';
+import {useBaseUrlUtils} from '@docusaurus/useBaseUrl';
 
 function Footer() {
+  const {withBaseUrl} = useBaseUrlUtils();
   const { footer } = useThemeConfig();
   if (!footer) {
     return null;
@@ -24,7 +26,7 @@ function Footer() {
               <>
                 <ThemedImage
                   alt={logo.alt}
-                  sources={{ light: logo.src, dark: logo.srcDark || logo.src }}
+                  sources={{ light: withBaseUrl(logo.src), dark: withBaseUrl(logo.srcDark) || withBaseUrl(logo.src) }}
                   style={{ width: '160px', height: 'auto', boxShadow: 'none', borderRadius: '0' }}
                 />
                 <p className="footer__tagline" style={{ marginTop: '0.5rem' }}>All your business on one platform</p>
@@ -32,8 +34,8 @@ function Footer() {
                   <a href="https://github.com/paybillke" target="_blank" rel="noopener noreferrer">
                     <ThemedImage
                       sources={{
-                        light: '/img/social/github-icon.svg',
-                        dark: '/img/social/github-icon-white.svg'
+                        light: withBaseUrl('/img/social/github-icon.svg'),
+                        dark: withBaseUrl('/img/social/github-icon-white.svg')
                       }}
                       alt="GitHub"
                       style={{ width: '24px', height: '24px', objectFit: 'contain', boxShadow: 'none', borderRadius: '0' }}
@@ -42,8 +44,8 @@ function Footer() {
                   <a href="https://x.com/paybillke" target="_blank" rel="noopener noreferrer">
                     <ThemedImage
                       sources={{
-                        light: '/img/social/x-icon.svg',
-                        dark: '/img/social/x-icon-white.svg'
+                        light: withBaseUrl('/img/social/x-icon.svg'),
+                        dark: withBaseUrl('/img/social/x-icon-white.svg')
                       }}
                       alt="X"
                       style={{ width: '24px', height: '24px', objectFit: 'contain', boxShadow: 'none', borderRadius: '0' }}

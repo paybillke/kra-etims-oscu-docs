@@ -163,7 +163,7 @@ for item in item_list:
   <TabItem value="js" label="JavaScript / Typescript">
 
 ```ts
-const response = await etimsClient.selectItems({
+const response = await etimsVClient.selectItems({
   lastReqDt: formatDateForEtims(-30)
 });
 

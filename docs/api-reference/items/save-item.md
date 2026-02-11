@@ -169,7 +169,7 @@ print("Result Date:", response.get('resultDt'))
   <TabItem value="js" label="JavaScript / Typescript">
 
 ```ts
-const response = await etimsClient.saveItem({
+const response = await etimsVClient.saveItem({
   itemCd: `KE1NTXU${Date.now()}`,
   itemClsCd: '5059690800',
   itemTyCd: '1',

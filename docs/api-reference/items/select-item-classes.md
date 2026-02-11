@@ -153,7 +153,7 @@ foreach ($itemClsList as $item) {
   <TabItem value="js" label="JavaScript / Typescript">
 
 ```ts
-const response = await etimsClient.selectItemClasses({
+const response = await etimsVClient.selectItemClasses({
   lastReqDt: formatDateForEtims(-30),
 });
 

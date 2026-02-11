@@ -46,7 +46,7 @@ OSCU will authenticate the device and retrieve the **communication key** from KR
 
 ---
 
-## 3. OSCU Running Process & Configurations
+## 3.OSCU Running Process & Configurations
 
 Key policies for OSCU users:
 
@@ -59,7 +59,7 @@ Key policies for OSCU users:
 ### Sample Initialization Call
 
 ```json
-POST https://etims-api-sbx.kra.go.ke/etims-api/selectInitOsdcInfo
+POST /selectInitOsdcInfo
 {
   "tin": "A123456789Z",
   "bhfId": "00",
@@ -101,7 +101,7 @@ POST https://etims-api-sbx.kra.go.ke/etims-api/selectInitOsdcInfo
 
 ---
 
-## 4. OSCU Business Functions
+## OSCU Business Functions
 
 OSCU methods are grouped into **8 categories**:
 

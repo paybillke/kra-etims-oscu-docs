@@ -24,8 +24,8 @@ Load environment variables and bootstrap the SDK:
 ```php
 require_once __DIR__ . '/vendor/autoload.php';
 
-use KraEtimsSdk\Services\AuthClient;
-use KraEtimsSdk\Services\EtimsClient;
+use KraEtimsSdk\Services\AuthVClient;
+use KraEtimsSdk\Services\EtimsVClient;
 
 // Load env variables using dotenv if needed
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
@@ -37,13 +37,11 @@ $config = [
     'auth' => [
         'sbx' => [
             'consumer_key' => getenv('KRA_CONSUMER_KEY'),
-            'consumer_secret' => getenv('KRA_CONSUMER_SECRET'),
-            'token_url' => 'https://sbx.kra.go.ke/v1/token/generate'
+            'consumer_secret' => getenv('KRA_CONSUMER_SECRET')
         ],
         'prod' => [
             'consumer_key' => getenv('KRA_CONSUMER_KEY'),
-            'consumer_secret' => getenv('KRA_CONSUMER_SECRET'),
-            'token_url' => 'https://etims-api.kra.go.ke/v1/token/generate'
+            'consumer_secret' => getenv('KRA_CONSUMER_SECRET')
         ]
     ],
     'oscu' => [
@@ -54,8 +52,8 @@ $config = [
     ]
 ];
 
-$auth = new AuthClient($config);
-$etims = new EtimsClient($config, $auth);
+$auth = new AuthVClient($config);
+$etims = new EtimsVClient($config, $auth);
 ```
 
 </TabItem>
@@ -68,7 +66,7 @@ Load env variables and bootstrap the SDK:
 
 ```javascript
 import dotenv from 'dotenv';
-import { AuthClient, EtimsClient } from 'kra-etims-sdk';
+import { AuthVClient, EtimsVClient } from 'kra-etims-sdk';
 
 dotenv.config();
 
@@ -76,12 +74,10 @@ const config = {
   env: process.env.KRA_ENV || 'sbx',
   auth: {
     sbx: {
-      token_url: 'https://sbx.kra.go.ke/v1/token/generate',
       consumer_key: process.env.KRA_CONSUMER_KEY,
       consumer_secret: process.env.KRA_CONSUMER_SECRET
     },
     prod: {
-      token_url: 'https://etims-api.kra.go.ke/v1/token/generate',
       consumer_key: process.env.KRA_CONSUMER_KEY,
       consumer_secret: process.env.KRA_CONSUMER_SECRET
     }
@@ -94,8 +90,8 @@ const config = {
   }
 };
 
-const auth = new AuthClient(config);
-const etims = new EtimsClient(config, auth);
+const auth = new AuthVClient(config);
+const etims = new EtimsVClient(config, auth);
 ```
 
 </TabItem>
@@ -108,8 +104,8 @@ Load environment variables and bootstrap the SDK:
 
 ```python
 import os
-from kra_etims_sdk.auth import AuthClient
-from kra_etims_sdk.client import EtimsClient
+from kra_etims_sdk.auth import AuthVClient
+from kra_etims_sdk.client import EtimsVClient
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -118,12 +114,10 @@ config = {
     "env": os.getenv("KRA_ENV", "sbx"),
     "auth": {
         "sbx": {
-            "token_url": "https://sbx.kra.go.ke/v1/token/generate",
             "consumer_key": os.getenv("KRA_CONSUMER_KEY"),
             "consumer_secret": os.getenv("KRA_CONSUMER_SECRET")
         },
         "prod": {
-            "token_url": "https://etims-api.kra.go.ke/v1/token/generate",
             "consumer_key": os.getenv("KRA_CONSUMER_KEY"),
             "consumer_secret": os.getenv("KRA_CONSUMER_SECRET")
         }
@@ -136,8 +130,8 @@ config = {
     }
 }
 
-auth = AuthClient(config)
-etims = EtimsClient(config, auth)
+auth = AuthVClient(config)
+etims = EtimsVClient(config, auth)
 ```
 
 </TabItem>

@@ -41,8 +41,6 @@ This API:
 |------|------------|------|----------|--------|
 | `custmTin` | Customer PIN | CHAR | ✅ Yes | 11 |
 
-> 🔑 `cmcKey` must be obtained from **Device Initialization** and reused for all secured requests.
-
 ---
 
 ### JSON Request Example
@@ -143,7 +141,7 @@ foreach ($custList as $cust) {
   <TabItem value="js" label="JavaScript / Typescript">
 
 ```ts
-const response = await etimsClient.selectCustomer({
+const response = await etimsVClient.selectCustomer({
   custmTin: 'A123456789Z'
 });
 

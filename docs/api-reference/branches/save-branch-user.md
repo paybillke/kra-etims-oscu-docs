@@ -95,9 +95,6 @@ POST /saveBhfUser
 
 ```python
 user_data = {
-    'tin': config['oscu']['tin'],
-    'bhfId': config['oscu']['bhf_id'],
-    'cmcKey': config['oscu']['cmc_key'],
     'userId': 'userId3',
     'userNm': 'User Name3',
     'pwd': '12341234',
@@ -122,10 +119,10 @@ else:
 
   </TabItem>
 
-  <TabItem value="js" label="JavaScript / Node.js">
+  <TabItem value="js" label="JavaScript / TypeScript">
 
 ```ts
-const response = await etimsClient.saveBranchUser({
+const response = await etimsVClient.saveBranchUser({
   userId: `user_${Date.now()}`,
   userNm: `Test User ${Date.now()}`,
   pwd: 'SecurePass123!',
@@ -145,9 +142,6 @@ console.log(`✅ Branch user saved: ${response.resultMsg}`);
 
 ```php
 $requestData = [
-    'tin'       => $config['oscu']['tin'],
-    'bhfId'     => $config['oscu']['bhf_id'],
-    'cmcKey'    => $config['oscu']['cmc_key'] ?? '',
     'userId'    => 'userId3',
     'userNm'    => 'User Name3',
     'pwd'       => '12341234',

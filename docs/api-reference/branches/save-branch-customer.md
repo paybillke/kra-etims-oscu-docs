@@ -122,10 +122,10 @@ else:
 
   </TabItem>
 
-  <TabItem value="js" label="JavaScript / Node.js">
+  <TabItem value="js" label="JavaScript / TypeScript">
 
 ```ts
-const response = await etimsClient.saveBranchCustomer({
+const response = await etimsVClient.saveBranchCustomer({
   custNo: `CUST123456`,
   custTin: 'A123456789Z',
   custNm: `Test Customer ${Date.now()}`,

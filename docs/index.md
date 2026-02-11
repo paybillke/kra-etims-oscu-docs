@@ -18,7 +18,7 @@ These SDKs abstract the complexity of the OSCU protocol, strict payload validati
 
 ## Supported Languages & Installation
 
-Paybill currently maintains official SDKs for PHP, JavaScript/Node.js, and Python.
+Paybill currently maintains official SDKs for PHP, JavaScript/ TypeScript, and Python.
 
 <Tabs>
   <TabItem value="php" label="PHP" default>

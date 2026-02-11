@@ -169,7 +169,7 @@ echo "CMC Key: $cmcKey\n";
 <TabItem value="js" label="JavaScript / Typescript">
 
 ```ts
-const response = await etimsClient.selectInitOsdcInfo({
+const response = await etimsVClient.selectInitOsdcInfo({
   tin: process.env.KRA_TIN!,
   bhfId: process.env.KRA_BHF_ID || '01',
   dvcSrlNo: process.env.DEVICE_SERIAL!,
