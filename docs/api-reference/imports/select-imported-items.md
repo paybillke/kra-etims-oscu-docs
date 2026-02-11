@@ -153,7 +153,7 @@ foreach ($itemList as $item) {
   <TabItem value="js" label="JavaScript / TypeScript">
 
 ```ts
-const response = await etimsVClient.selectImportedItems({
+const response = await client.selectImportedItems({
   lastReqDt: '20190524000000'
 });
 

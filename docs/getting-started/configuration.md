@@ -24,8 +24,8 @@ Load environment variables and bootstrap the SDK:
 ```php
 require_once __DIR__ . '/vendor/autoload.php';
 
-use KraEtimsSdk\Services\AuthVClient;
-use KraEtimsSdk\Services\EtimsVClient;
+use KraEtimsSdk\Services\AuthOClient;
+use KraEtimsSdk\Services\EtimsOClient;
 
 // Load env variables using dotenv if needed
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
@@ -52,8 +52,8 @@ $config = [
     ]
 ];
 
-$auth = new AuthVClient($config);
-$etims = new EtimsVClient($config, $auth);
+$auth = new AuthOClient($config);
+$etims = new EtimsOClient($config, $auth);
 ```
 
 </TabItem>
@@ -66,7 +66,7 @@ Load env variables and bootstrap the SDK:
 
 ```javascript
 import dotenv from 'dotenv';
-import { AuthVClient, EtimsVClient } from 'kra-etims-sdk';
+import { AuthOClient, EtimsOClient } from 'kra-etims-sdk';
 
 dotenv.config();
 
@@ -90,8 +90,8 @@ const config = {
   }
 };
 
-const auth = new AuthVClient(config);
-const etims = new EtimsVClient(config, auth);
+const auth = new AuthOClient(config);
+const etims = new EtimsOClient(config, auth);
 ```
 
 </TabItem>
@@ -104,8 +104,8 @@ Load environment variables and bootstrap the SDK:
 
 ```python
 import os
-from kra_etims_sdk.auth import AuthVClient
-from kra_etims_sdk.client import EtimsVClient
+from kra_etims_sdk.oauth import AuthOClient
+from kra_etims_sdk.oclient import EtimsOClient
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -130,8 +130,8 @@ config = {
     }
 }
 
-auth = AuthVClient(config)
-etims = EtimsVClient(config, auth)
+auth = AuthOClient(config)
+etims = EtimsOClient(config, auth)
 ```
 
 </TabItem>

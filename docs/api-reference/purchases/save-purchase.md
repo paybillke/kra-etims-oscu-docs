@@ -427,7 +427,7 @@ const purchaseData = {
   ],
 };
 
-const response = await etimsVClient.savePurchase(requestData);
+const response = await client.savePurchase(requestData);
 console.log(response.resultMsg);
 ```
 

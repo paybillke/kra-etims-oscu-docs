@@ -182,7 +182,7 @@ const requestData = {
   lastReqDt: '20190524000000'
 };
 
-const response = await etimsVClient.selectPurchases(requestData);
+const response = await client.selectPurchases(requestData);
 ```
 
   </TabItem>

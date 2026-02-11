@@ -318,7 +318,7 @@ const requestData = {
   ]
 };
 
-const response = await etimsVClient.saveSalesTransaction(requestData);
+const response = await client.saveSalesTransaction(requestData);
 ```
 
   </TabItem>

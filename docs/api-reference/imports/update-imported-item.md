@@ -129,7 +129,7 @@ if (($response['resultCd'] ?? '') === '000') {
   <TabItem value="js" label="JavaScript / TypeScript">
 
 ```ts
-const response = await etimsVClient.updateImportedItem({
+const response = await client.updateImportedItem({
   taskCd: '2231943',
   dclDe: '20191217',
   itemSeq: 1,

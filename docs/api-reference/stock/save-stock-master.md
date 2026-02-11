@@ -120,7 +120,7 @@ const stock_master_data = {
   modrNm: 'Test'
 };
 
-const response = await etimsVClient.saveStockMaster(stock_master_data);
+const response = await client.saveStockMaster(stock_master_data);
 console.log(`✅ Stock master updated: ${response.resultMsg}`);
 ```
 

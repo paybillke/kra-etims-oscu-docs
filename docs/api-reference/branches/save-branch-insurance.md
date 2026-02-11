@@ -110,7 +110,7 @@ else:
   <TabItem value="js" label="JavaScript / TypeScript">
 
 ```ts
-const response = await etimsVClient.saveBranchInsurance({
+const response = await client.saveBranchInsurance({
   isrccCd: `INS12345`,
   isrccNm: `Test Insurance ${Date.now()}`,
   isrcRt: 20,

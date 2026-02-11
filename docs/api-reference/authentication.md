@@ -18,7 +18,7 @@ All interactions with the KRA eTIMS OSCU API require **authentication via OAuth 
 ```php
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use KraEtimsSdk\Services\AuthVClient;
+use KraEtimsSdk\Services\AuthOClient;
 
 $config = [
     'env' => 'sbx',
@@ -40,7 +40,7 @@ $config = [
     ]
 ];
 
-$auth = new AuthVClient($config);
+$auth = new AuthOClient($config);
 
 try {
     $auth->forgetToken();          // Clear cached token
@@ -51,10 +51,10 @@ try {
 }
 ````
 
-> Once you have the token, initialize the `EtimsVClient` to call API endpoints:
+> Once you have the token, initialize the `EtimsOClient` to call API endpoints:
 
 ```php
-$etims = new EtimsVClient($config, $auth);
+$etims = new EtimsOClient($config, $auth);
 ```
 
 </TabItem>
@@ -62,7 +62,7 @@ $etims = new EtimsVClient($config, $auth);
 <TabItem value="js" label="JavaScript / Typescript">
 
 ```ts
-import { AuthVClient } from '@paybilldev/kra-etims-sdk';
+import { AuthOClient } from '@paybilldev/kra-etims-sdk';
 
 const config = {
   env: 'sbx',
@@ -84,11 +84,11 @@ const config = {
   }
 };
 
-const authVClient = new AuthVClient(config);
+const auth = new AuthOClient(config);
 
 async function main() {
   try {
-    const token = await authVClient.getToken(true); // Force refresh
+    const token = await auth.getToken(true); // Force refresh
     console.log(`✅ Token OK: ${token.substring(0, 25)}...`);
   } catch (err) {
     console.error(`❌ Auth failed: ${err}`);
@@ -98,11 +98,11 @@ async function main() {
 main();
 ```
 
-> Use the token to initialize the `EtimsVClient`:
+> Use the token to initialize the `EtimsOClient`:
 
 ```ts
-import { EtimsVClient } from '@paybilldev/kra-etims-sdk';
-const etimsVClient = new EtimsVClient(config, authVClient);
+import { EtimsOClient } from '@paybilldev/kra-etims-sdk';
+const client = new EtimsOClient(config, auth);
 ```
 
 </TabItem>
@@ -111,7 +111,7 @@ const etimsVClient = new EtimsVClient(config, authVClient);
 
 ```python
 import os
-from kra_etims_sdk.auth import AuthVClient
+from kra_etims_sdk.oauth import AuthOClient
 
 config = {
     'env': 'sbx',
@@ -133,7 +133,7 @@ config = {
     }
 }
 
-auth = AuthVClient(config)
+auth = AuthOClient(config)
 
 try:
     auth.forget_token()            # Clear cached token
@@ -143,11 +143,11 @@ except Exception as e:
     print(f"❌ Auth failed: {e}")
 ```
 
-> Initialize the EtimsVClient after getting the token:
+> Initialize the EtimsOClient after getting the token:
 
 ```python
-from kra_etims_sdk.client import EtimsVClient
-etims_client = EtimsVClient(config, auth)
+from kra_etims_sdk.oclient import EtimsOClient
+etims_client = EtimsOClient(config, auth)
 ```
 
 </TabItem>

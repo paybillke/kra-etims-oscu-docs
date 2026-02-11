@@ -287,7 +287,7 @@ const stock_io_data = {
     ]
 };
 
-const response = await etimsVClient.saveStockIO(stock_io_data);
+const response = await client.saveStockIO(stock_io_data);
 console.log(`✅ Stock In/Out saved: ${response.resultMsg}`);
 ```
 

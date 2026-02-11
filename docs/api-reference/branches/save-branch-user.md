@@ -122,7 +122,7 @@ else:
   <TabItem value="js" label="JavaScript / TypeScript">
 
 ```ts
-const response = await etimsVClient.saveBranchUser({
+const response = await client.saveBranchUser({
   userId: `user_${Date.now()}`,
   userNm: `Test User ${Date.now()}`,
   pwd: 'SecurePass123!',

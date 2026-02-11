@@ -169,7 +169,7 @@ const requestData = {
   lastReqDt: '20260101000000'
 };
 
-const response = await etimsVClient.selectStockMovement(requestData);
+const response = await client.selectStockMovement(requestData);
 ```
 
   </TabItem>

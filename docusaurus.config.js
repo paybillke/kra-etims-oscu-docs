@@ -91,8 +91,8 @@ module.exports = {
         {
           title: 'Contact us',
           items: [
-            { label: 'info@paybill.ke', href: 'mailto:info@paybill.ke' },
-            { label: 'support@paybill.ke', href: 'mailto:support@paybill.ke' },
+            { label: 'info@paybill.dev', href: 'mailto:info@paybill.dev' },
+            { label: 'support@paybill.dev', href: 'mailto:support@paybill.dev' },
             { label: '+254757807150', href: 'tel:+254757807150' },
           ],
         },

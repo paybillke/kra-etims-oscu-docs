@@ -142,7 +142,7 @@ foreach ($noticeList as $notice) {
   <TabItem value="js" label="JavaScript / Typescript">
 
 ```ts
-const response = await etimsVClient.selectNoticeList({
+const response = await client.selectNoticeList({
   lastReqDt: formatDateForEtims(-30),
 });
 

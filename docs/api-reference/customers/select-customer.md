@@ -141,7 +141,7 @@ foreach ($custList as $cust) {
   <TabItem value="js" label="JavaScript / Typescript">
 
 ```ts
-const response = await etimsVClient.selectCustomer({
+const response = await client.selectCustomer({
   custmTin: 'A123456789Z'
 });
 
