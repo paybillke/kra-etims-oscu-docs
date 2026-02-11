@@ -6,8 +6,8 @@ const isProd = process.env.NODE_ENV === 'production';
 module.exports = {
   title: 'Paybill',
   tagline: 'Open Source Apps To Grow Your Business.',
-  url: 'https://paybill.ke/',
-  baseUrl: '/',
+  url: 'https://paybill.ke',
+  baseUrl: '/docs/kra-etims-oscu/',
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/paybill-favicon.svg',
@@ -34,7 +34,7 @@ module.exports = {
     },
     navbar: {
       logo: {
-        href: '/docs/kra-etims-oscu',
+        href: '/docs/kra-etims-oscu/',
         alt: 'Paybill Logo',
         src: 'img/docs_logo.svg',
         srcDark: `img/docs_logo_dark.svg`,
@@ -229,6 +229,7 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         docs: {
+            routeBasePath: '/',
             sidebarPath: require.resolve('./sidebars.js'),
             editUrl: 'https://github.com/paybillke/kra-etims-oscu-docs/blob/develop/',
 
@@ -266,14 +267,10 @@ module.exports = {
       {
         redirects: [
           {
-            to: '/docs/kra-etims-oscu',
-            from: '/',
-          },
-          {
-            to: '/docs/kra-etims-oscu',
+            to: '/',
             from: '/docs',
           },
-      ],
+        ],
       },
     ],
   ],

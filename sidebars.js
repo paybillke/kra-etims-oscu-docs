@@ -10,13 +10,13 @@ const sidebars = {
       items: [
         {
           type: 'doc',
-          id: 'kra-etims-oscu/index',
+          id: 'index',
           label: 'Introduction',
         },
-        'kra-etims-oscu/getting-started/requirements',
-        'kra-etims-oscu/getting-started/oscu',
-        'kra-etims-oscu/getting-started/installation',
-        'kra-etims-oscu/getting-started/configuration',
+        'getting-started/requirements',
+        'getting-started/oscu',
+        'getting-started/installation',
+        'getting-started/configuration',
       ],
     },
 
@@ -26,19 +26,19 @@ const sidebars = {
       className: 'category-as-header api-reference-header',
       collapsed: false,
       items: [
-        'kra-etims-oscu/api-reference/index',
-        'kra-etims-oscu/api-reference/authentication',
-        'kra-etims-oscu/api-reference/initialization',
-        'kra-etims-oscu/api-reference/select-code-list',
+        'api-reference/index',
+        'api-reference/authentication',
+        'api-reference/initialization',
+        'api-reference/select-code-list',
         {
           type: 'category',
           label: 'Customers & Branches',
           items: [
-            'kra-etims-oscu/api-reference/customers/select-customer',
-            'kra-etims-oscu/api-reference/branches/select-branches',
-            'kra-etims-oscu/api-reference/branches/save-branch-customer',
-            'kra-etims-oscu/api-reference/branches/save-branch-user',
-            'kra-etims-oscu/api-reference/branches/save-branch-insurance',
+            'api-reference/customers/select-customer',
+            'api-reference/branches/select-branches',
+            'api-reference/branches/save-branch-customer',
+            'api-reference/branches/save-branch-user',
+            'api-reference/branches/save-branch-insurance',
           ],
         },
 
@@ -46,10 +46,10 @@ const sidebars = {
           type: 'category',
           label: 'Items',
           items: [
-            'kra-etims-oscu/api-reference/items/select-item-classes',
-            'kra-etims-oscu/api-reference/items/select-items',
-            'kra-etims-oscu/api-reference/items/save-item',
-            'kra-etims-oscu/api-reference/items/save-item-composition',
+            'api-reference/items/select-item-classes',
+            'api-reference/items/select-items',
+            'api-reference/items/save-item',
+            'api-reference/items/save-item-composition',
           ],
         },
 
@@ -57,8 +57,8 @@ const sidebars = {
           type: 'category',
           label: 'Imported Items',
           items: [
-            'kra-etims-oscu/api-reference/imports/select-imported-items',
-            'kra-etims-oscu/api-reference/imports/update-imported-item',
+            'api-reference/imports/select-imported-items',
+            'api-reference/imports/update-imported-item',
           ],
         },
 
@@ -66,9 +66,9 @@ const sidebars = {
           type: 'category',
           label: 'Purchases & Sales',
           items: [
-            'kra-etims-oscu/api-reference/purchases/select-purchases',
-            'kra-etims-oscu/api-reference/purchases/save-purchase',
-            'kra-etims-oscu/api-reference/purchases/save-sales-transaction',
+            'api-reference/purchases/select-purchases',
+            'api-reference/purchases/save-purchase',
+            'api-reference/purchases/save-sales-transaction',
           ],
         },
 
@@ -76,12 +76,12 @@ const sidebars = {
           type: 'category',
           label: 'Stock',
           items: [
-            'kra-etims-oscu/api-reference/stock/select-stock-movement',
-            'kra-etims-oscu/api-reference/stock/save-stock-io',
-            'kra-etims-oscu/api-reference/stock/save-stock-master',
+            'api-reference/stock/select-stock-movement',
+            'api-reference/stock/save-stock-io',
+            'api-reference/stock/save-stock-master',
           ],
         },
-        'kra-etims-oscu/api-reference/select-notice-list'
+        'api-reference/select-notice-list'
       ],
     },
 
@@ -91,9 +91,9 @@ const sidebars = {
       className: 'category-as-header error-handling-header',
       collapsed: true,
       items: [
-        'kra-etims-oscu/error-handling/index',
-        'kra-etims-oscu/error-handling/exceptions',
-        'kra-etims-oscu/error-handling/common-error-codes',
+        'error-handling/index',
+        'error-handling/exceptions',
+        'error-handling/common-error-codes',
       ],
     },
 
@@ -103,7 +103,7 @@ const sidebars = {
       className: 'category-as-header troubleshooting-header',
       collapsed: true,
       items: [
-        'kra-etims-oscu/troubleshooting/index',
+        'troubleshooting/index',
       ],
     },
   ],
